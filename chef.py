@@ -103,7 +103,7 @@ ingredient_3 = st.text_input(
 # https://docs.streamlit.io/library/api-reference/widgets/st.radio
 wine = st.radio(
     "What's your wine preference:",
-    ["Wine", "White", "None"],
+    ["Red", "White", "None"],
     key="wine",
     horizontal=True
 )
