@@ -62,10 +62,10 @@ streamlit run chef.py \
   Os comandos para a criação do repositório:
 
 ```  
-  AR_REPO='chef-repo'
-  SERVICE_NAME='chef-streamlit-app' 
-  gcloud artifacts repositories create "$AR_REPO" --location="$GCP_REGION" --repository-format=Docker
-  gcloud builds submit --tag "$GCP_REGION-docker.pkg.dev/$GCP_PROJECT/$AR_REPO/$SERVICE_NAME"
+AR_REPO='chef-repo'
+SERVICE_NAME='chef-streamlit-app' 
+gcloud artifacts repositories create "$AR_REPO" --location="$GCP_REGION" --repository-format=Docker
+gcloud builds submit --tag "$GCP_REGION-docker.pkg.dev/$GCP_PROJECT/$AR_REPO/$SERVICE_NAME"
 ```
 
 
