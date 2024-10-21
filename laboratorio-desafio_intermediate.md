@@ -54,7 +54,13 @@ streamlit run chef.py \
 
   Tarefa 4
   ---------
+
+  O Dockerfile modificado para a execução do aplicativo chef.py:
   
+ [Dockerfile](Dockerfile)
+
+  Os comandos para a criação do repositório:
+
 ```  
   AR_REPO='chef-repo'
   SERVICE_NAME='chef-streamlit-app' 
