@@ -5,7 +5,12 @@
   Inspect Rich Documents with Gemini Multimodality and Multimodal RAG: Challenge Lab
   ----------------------------------------------------------------------------------
   
-  Nesse laborário são colocados códigos em Python nas células do JupyterLab que iniciam com o comentário # "COMPLETE THE MISSING PART AND RUN THIS CELL"
+  Nesse laborário são colocados códigos em Python nas células do JupyterLab que iniciam com o comentário:
+
+  ```
+  # "COMPLETE THE MISSING PART AND RUN THIS CELL"
+  ```
+  
   As outras células são apenas executadas.
   Podem ser utilizados 2 documentos como referência de laboratórios anteriores.
   
