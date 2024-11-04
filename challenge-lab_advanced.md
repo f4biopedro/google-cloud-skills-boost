@@ -11,7 +11,8 @@ Nesse laborário são colocados códigos em Python nas células do JupyterLab qu
 # "COMPLETE THE MISSING PART AND RUN THIS CELL"
 ```
   
-As outras células são apenas executadas.  
+As outras células são apenas executadas.
+
 Podem ser utilizados 2 documentos como referência de laboratórios anteriores.
   
 Para a Tarefa 1:
