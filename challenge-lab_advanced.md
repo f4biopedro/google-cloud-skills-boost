@@ -11,8 +11,8 @@
   # "COMPLETE THE MISSING PART AND RUN THIS CELL"
   ```
   
-  As outras células são apenas executadas.
-  Podem ser utilizados 2 documentos como referência de laboratórios anteriores.
+  As outras células são apenas executadas.  
+Podem ser utilizados 2 documentos como referência de laboratórios anteriores.
   
   Para a Tarefa 1:
   
