@@ -9,20 +9,23 @@ from inventory import inventory
 # pylint: disable=C0103
 app = Flask(__name__)
 
+# Generate an app route to display a list of inventory items in the JSON format from the inventory.py file.
+# Use the GET method.
 @app.route('/inventory', methods=['GET'])
-def inventory_list():
-    """Return a list of inventory items in JSON format."""
+def get_inventory():
     return jsonify(inventory)
 
+# Generate an App route to get a product from the list of inventory items given the productID.
+# Use the GET method.
+# If there is an invalid productID, return a 404 error with an error message in the JSON.
 @app.route('/inventory/<productid>', methods=['GET'])
-def inventory_item(productid):
-    """Return a single inventory item in JSON format."""
-    for item in inventory:
-        if item['productid'] == productid:
-            return jsonify(item)
-    return jsonify({'error': 'Product not found'}), 404
+def get_product(productid):
+    product = next((item for item in inventory if item['productid'] == productid), None)
+    if product:
+        return jsonify(product)
+    else:
+        return jsonify({'error': 'Product not found'}), 404
 
-    
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
